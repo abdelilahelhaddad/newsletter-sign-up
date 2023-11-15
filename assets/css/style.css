@@ -7,12 +7,75 @@
 }
 
 body {
+  background-color: hsl(234, 29%, 20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
+}
+
+input::-moz-placeholder {
+  font-weight: 400;
+}
+
+p,
+input::placeholder {
+  font-weight: 400;
+}
+
+h1,
+label,
+span,
+button {
+  font-weight: 700;
 }
 
 .container {
   padding: 0 1rem;
   margin: 0 auto;
-  width: 800px;
+  width: 1024px;
+}
+
+.newsletter {
+  display: flex;
+  padding: 1.5rem 1.5rem 1.5rem 0;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(234, 29%, 20%);
+  border-radius: 25px;
+}
+.newsletter .newsletter__content {
+  display: block;
+  width: 55%;
+  padding: 0 3.5rem;
+}
+.newsletter .newsletter__content h1 {
+  font-size: 4rem;
+}
+.newsletter .newsletter__content ul li {
+  display: flex;
+  list-style: none;
+}
+.newsletter .newsletter__content form {
+  display: flex;
+  flex-direction: column;
+}
+.newsletter .newsletter__illustration {
+  width: 45%;
+  background-image: url("../images/illustration-sign-up-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 15px;
+}
+
+.success {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 750px;
+  }
 }/*# sourceMappingURL=style.css.map */
