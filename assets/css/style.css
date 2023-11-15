@@ -4,4 +4,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  padding: 0 1rem;
+  margin: 0 auto;
+  width: 800px;
 }/*# sourceMappingURL=style.css.map */
