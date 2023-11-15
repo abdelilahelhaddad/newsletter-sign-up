@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+$fontFamily: "Roboto", sans-serif;
+$font-weight-400: 400;
+$font-weight-700: 700;
+
+$primary: hsl(4, 100%, 67%);
+$secondary: hsl(234, 29%, 20%);
+$background: hsl(235, 18%, 26%);
+$form: hsl(231, 7%, 60%);
+$white: hsl(0, 0%, 100%);
