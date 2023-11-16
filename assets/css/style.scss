@@ -64,7 +64,8 @@ button {
 }
 
 .newsletter {
-  display: flex;
+  display: none;
+  // display: flex;
   padding: 1.5rem 1.5rem 1.5rem 0;
   background-color: $white;
   color: $secondary;
@@ -127,12 +128,39 @@ button {
 }
 
 .success {
-  display: none;
+  // display: none;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: $white;
+  color: $secondary;
+  border-radius: 25px;
+  padding: 3.5rem;
+  margin: 0 auto;
+  img {
+    width: 65px;
+  }
+  h1 {
+    font-size: 3.4rem;
+  }
+  h1,
+  button {
+    margin-top: 2.7rem;
+  }
+  p {
+    margin-top: 1.2rem;
+  }
 }
 
 @media (max-width: 1024px) {
   .container {
     width: 750px;
+  }
+  .success {
+    padding: 2.5rem;
+    h1 {
+      font-size: 2.5rem;
+    }
   }
 }
 
@@ -144,31 +172,31 @@ button {
   .container {
     width: auto;
     padding: 0;
-    .newsletter {
+  }
+  .newsletter {
+    flex-direction: column;
+    padding: 0;
+    border-radius: 0;
+    .newsletter__content {
       flex-direction: column;
-      padding: 0;
-      border-radius: 0;
-      .newsletter__content {
-        flex-direction: column;
-        width: auto;
-        padding: 2rem 1.5rem;
-        order: 2;
-        h1 {
-          font-size: 3rem;
-        }
-        ul {
-          li {
-            align-items: flex-start;
-          }
+      width: auto;
+      padding: 2rem 1.5rem;
+      order: 2;
+      h1 {
+        font-size: 3rem;
+      }
+      ul {
+        li {
+          align-items: flex-start;
         }
       }
+    }
 
-      .newsletter__illustration {
-        width: auto;
-        height: 284px;
-        background-image: url(../images/illustration-sign-up-mobile.svg);
-        border-radius: 0 0 15px 15px;
-      }
+    .newsletter__illustration {
+      width: auto;
+      height: 284px;
+      background-image: url(../images/illustration-sign-up-mobile.svg);
+      border-radius: 0 0 15px 15px;
     }
   }
 }
