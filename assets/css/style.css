@@ -32,6 +32,19 @@ button {
   font-weight: 700;
 }
 
+.btn {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(234, 29%, 20%);
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 1.2rem;
+}
+.btn:hover {
+  background: linear-gradient(90deg, rgb(255, 89, 105) 0%, rgb(255, 112, 88) 50%, rgb(255, 131, 70) 100%);
+  cursor: pointer;
+}
+
 .container {
   padding: 0 1rem;
   margin: 0 auto;
@@ -46,23 +59,54 @@ button {
   border-radius: 25px;
 }
 .newsletter .newsletter__content {
-  display: block;
-  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 57%;
   padding: 0 3.5rem;
 }
 .newsletter .newsletter__content h1 {
   font-size: 4rem;
 }
+.newsletter .newsletter__content > p {
+  margin-top: 1.2rem;
+}
+.newsletter .newsletter__content ul {
+  margin-top: 1.2rem;
+}
 .newsletter .newsletter__content ul li {
   display: flex;
   list-style: none;
+  margin-top: 0.8rem;
+}
+.newsletter .newsletter__content ul li img {
+  margin-right: 0.85rem;
 }
 .newsletter .newsletter__content form {
   display: flex;
   flex-direction: column;
+  margin-top: 3rem;
+}
+.newsletter .newsletter__content form label {
+  font-size: 0.8rem;
+}
+.newsletter .newsletter__content form input#email {
+  border-radius: 5px;
+  border: 1px solid hsl(231, 7%, 60%);
+  padding: 1rem 1.2rem;
+  margin-top: 0.5rem;
+}
+.newsletter .newsletter__content form input#email:hover {
+  border: 1px solid hsl(234, 29%, 20%);
+  cursor: pointer;
+}
+.newsletter .newsletter__content form input#email:focus {
+  outline: none;
+  border: 1px solid hsl(234, 29%, 20%);
 }
 .newsletter .newsletter__illustration {
-  width: 45%;
+  width: 43%;
+  height: 593px;
   background-image: url("../images/illustration-sign-up-desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
