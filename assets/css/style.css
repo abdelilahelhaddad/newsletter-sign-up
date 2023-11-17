@@ -52,7 +52,7 @@ button {
 }
 
 .newsletter {
-  display: none;
+  display: flex;
   padding: 1.5rem 1.5rem 1.5rem 0;
   background-color: hsl(0, 0%, 100%);
   color: hsl(234, 29%, 20%);
@@ -89,6 +89,8 @@ button {
 }
 .newsletter .newsletter__content form label {
   font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
 }
 .newsletter .newsletter__content form input#email {
   border-radius: 5px;
@@ -115,7 +117,7 @@ button {
 }
 
 .success {
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 50%;
   background-color: hsl(0, 0%, 100%);
